@@ -1,6 +1,6 @@
 name: Workflow for Codecov example-python
 on: [push, pull_request]
-jobs:
+jobs:4000
   run:
     runs-on: ubuntu-latest
     steps:
@@ -19,6 +19,6 @@ jobs:
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v4
         with:
-          verbose: true
+          verbose: 
         env:
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
